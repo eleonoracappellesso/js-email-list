@@ -12,14 +12,17 @@
     <title>js-email-list</title>
 </head>
 
-<body>
+<body class="bg-secondary-subtle">
     <main class="container">
-        <h1 class="my-4">Chiamate API</h1>
-        <ul id="mailsList">
+        <h1 class="text-danger text-center my-4">Generatore di indirizzi mail</h1>
+        <ul class="list-unstyled d-flex flex-column align-items-center" id="mailsList">
 
         </ul>
-        <button class="btn btn-outline-dark" id="mailBtn">Genera mail</button>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-outline-success text-center" id="mailBtn">Genera mail</button>
+        </div>
     </main>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

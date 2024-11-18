@@ -8,6 +8,7 @@ generare 10 indirizzi email e stamparli in pagina all'interno di una lista.
 */
 
 const generateMailBtn = document.getElementById('mailBtn');
+console.log(generateMailBtn);
 const emailsUl = document.getElementById('mailsList');
 
 generateMailBtn.addEventListener("click", generateMails);
@@ -23,10 +24,10 @@ function generateMails() {
                 console.log(mails.data);
                 emailsList.push(mails.data.response);
 
-                if (emailsList === 10) {
+                if (emailsList.length === 10) {
                     let emailLi = "";
                     emailsList.forEach(element => {
-                        emailLi += `<li>${element}</li>`;
+                        emailLi += `<li class="text-bg-secondary p-2 my-1">${element}</li>`;
                     });
 
                     emailsUl.innerHTML = emailLi;
